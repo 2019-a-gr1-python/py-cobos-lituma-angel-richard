@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*Etiqueta  */
+        h1{
+            background-color: blue;
+
+        }
+
+        /*Identificador */
+        #principal {
+            background-color: green;
+        }
+
+        /*Clase*/
+        .rojo {
+            background-color: blueviolet;
+        }
+            
+        p.rojo {
+            background-color: aqua;
+        }
+
+        p.rojo.azul{
+            background-color: brown;
+        }
+
+        /*Aplican a todos los que tiene la clase morado*/
+        p.morado{
+            background-color: purple;
+        }    
+
+        /*Dento de un div y un parrafo*/
+        div > p.morado{
+            background-color: blueviolet
+
+        }
+        /*Dento de un div y un parrafo y un span*/    
+        div > p.morado > span.blanco{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>h1 1</h1>
+    <h1 id = "principal">h1 2</h1>
+    <h1 class="rojo">h1 3</h1>
+    
+    <p class="rojo">Parrafo Rojo</p>
+    <p class="rojo azul">Parrafo Rojo Azul</p>
+    <p>Parrafo normal</p>
+    <p class="verde">Parrafo Verde</p>
+
+    <p class="morado">Morado afuera</p>
+    <p class="cafe">Cafe afuera</p>
+
+    <div>
+        <p class="morado">Morado</p>
+        <p class="morado"> 
+            <span class="blanco">Morado span blanco</span>
+            <span>Morado</span>
+        </p>
+        <p class="cafe">Cafe</p>
+
+
+
+    </div>
+</body>
+</html>
